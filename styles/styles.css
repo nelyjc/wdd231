@@ -1,0 +1,198 @@
+/* styles/styles.css */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    background-color: #f4f4f4; 
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #5a4e85; 
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header img {
+    width: 100px;
+    border-radius: 10%;
+    margin-bottom: 10px;
+}
+
+header h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+nav {
+    background-color: #180135; 
+    color: white;
+    padding: 10px 0;
+    width: 100%;
+
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+
+nav a.active {
+    background-color: #1abc9c; 
+}
+
+main {
+    padding: 20px;
+    max-width: 960px;
+    margin: 20px auto;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex-grow: 1;
+}
+
+main h1 {
+    font-size: 2em;
+    color: #15001d; 
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.card-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.card {
+    background-color: #ecf0f1; 
+    border-radius: 5px;
+    padding: 15px;
+    flex: 1 1 300px; 
+}
+
+.card h2 {
+    font-size: 1.5em;
+    color: #3f0279; 
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.card ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.certificates {
+    background-color: #d3d3d3; 
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.certificates h2 {
+    font-size: 1.5em;
+    margin-top: 0;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.filters {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.filters button {
+    background-color: #11011f; 
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+}
+
+.filters button.active {
+    background-color: #1abc9c; 
+}
+
+.course div {
+    background-color: #6c2ea5; 
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 0.9em;
+    cursor: pointer; 
+    transition: background-color 0.3s ease, transform 0.1s ease-in-out;
+    gap: 15px; 
+    margin-bottom: 15px;
+
+}
+
+.course div:hover {
+    background-color: #1abc9c; 
+    transform: scale(1.05); 
+}
+
+.course div.selected {
+    background-color: #56006b; 
+    color: #ffffff; 
+    transform: scale(1.1); 
+    font-weight: bold; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+}
+.course-item.completed {
+    background-color: #caf8e9; 
+    color: #155724; 
+    
+}
+
+#total-credits {
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+footer {
+    background-color: #5a4e85; 
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 1em;
+}
+
+footer p {
+    margin: 5px 0;
+}

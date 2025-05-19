@@ -6,43 +6,82 @@
     <title>Nely Crespin - WDD231</title>
     <meta name="description" content="WDD 131 - Dynamic Web Fundamentals- Nely Crespin - Home Page">  
     <meta name="author" content="Nely Crespin"> 
-    <link rel="stylesheet" href="styles/styles.css"> 
+    <link rel="stylesheet" href="styles/styles.css"/>
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="small.css" />
+    <link rel="stylesheet" href="larger.css">
+    
+  
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
    
-    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/course.js" defer></script>
 </head>
 <body>
   <header>
+    <span><img src="images/profile.jpg" alt="profile image" width="300">
     <h1>Nely Crespin - WDD231</h1>
+    
+
     <nav>
       <ul>
-        <li><a href="https://www.linkedin.com/in/nelyjcrespin">LinkedIn</a></li>
-        <li><a href="https://byupw.instructure.com/">Canvas</a></li>
-        <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/alma/36?lang=eng&id=p1#p1">Scripture</a></li>
-        <li><a href="#">Final Project</a></li>
+        <li><a href="#" class="active"> Home</a></li>
+        <li><a href="#">Chamber</a></li>
+        <li><a href="#">Final</a></li>
+        <li><a href="#">Github Profile</a></li>
+        <li><a href="#">LinkedIn</a></li>
       </ul>
     </nav>
   </header>
-    <main>
-    <h1> Home </h1>
+   <main>
+  <h1>Home</h1>
+
+  <div class="card-grid">
     <section class="card">
       <h2>Course Work</h2>
-      <p>My name is Nely Crespin. I was born in Mexico and I have lived in the Utah since 2000. I am currently a stay at home mom. 
-        I have an online reselling business on the side. I like spending time with my kids and working on home improvement projects.
-      </p>
+      <ul>
+        <li>CSE 110 Intro to Programming</li>
+        <li>WDD 130 Web Fundamentals</li>
+        <li>CSE 111 Programming with Functions</li>
+        <li>CSE 210 Programming with Classes</li>
+        <li>WDD 131 Dynamic Web Fundamentals</li>
+        <li>WDD 231 Web Frontend Development I</li>
+      </ul>
     </section>
 
     <section class="card">
-      <h2>Mexico</h2>
-      <img src="images/Jalisco-Front-01.jpeg" alt="Mexico" width="300">
-      <p>Jalisco, Mexico is the birthplace of Mariachi Music, Mexican hat dance, tequila, Mexican Rodeos, and the wide brimmed sombrero. Jalisco also manufactures 60% of the country's computers. 
-        It has a very vibrant culture and people. The state's most popular tourist location is called Puerto Vallarta.
-      </p> 
-
+      <h2>Jalisco, Mexico</h2>
+      <img src="images/jaliscofront1.jpeg" alt="Mexico" width="300">
+      <p>Jalisco, Mexico is my birthplace as well as the birthplace of Mariachi Music, Mexican hat dance, tequila, Mexican Rodeos, and the wide brimmed sombrero. Jalisco also manufactures 60% of the country's computers. 
+        It has a very vibrant culture and people. The state's most popular tourist location is called Puerto Vallarta.</p>
     </section>
-    </main>
+  </div>
+
+  <!-- Certificates Section -->
+  <section class="certificates">
+    <h2>Web and Computer Programming Certificate</h2>
+
+    <div class="filters">
+      <button>All</button>
+      <button>CSE</button>
+      <button>WDD</button>
+    </div>
+
+    <div class="course">
+      <div>CSE 110</div>
+      <div>WDD 130</div>
+      <div>CSE 111</div>
+      <div>CSE 210</div>
+      <div>WDD 131</div>
+      <div>WDD 231</div>
+    </div>
+     <div id="total-credits">Total Credits: 12</div>
+</section>
+  </section>
+</main>
 
   <footer>
     <p>&copy; <span id="currentyear"></span> Nely, USA.</p>

@@ -1,0 +1,116 @@
+:root {
+  --primary: #3f3d56;
+  --accent: #ffcc00;
+  --dark: #1a1a1a;
+  --white: #ffffff;
+  --card-shadow: rgba(0, 0, 0, 0.1);
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  background-color: #f4f4f4;
+}
+
+header {
+  background-color: var(--primary);
+  color: var(--white);
+  text-align: center;
+  padding: 1rem;
+}
+
+header img.profile-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 2px solid var(--accent);
+  margin-bottom: 0.5rem;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: var(--dark);
+}
+
+nav li {
+  margin: 0.5rem;
+}
+
+nav a {
+  color: var(--white);
+  text-decoration: none;
+  padding: 0.5rem;
+}
+
+nav a.active {
+  border-bottom: 2px solid var(--accent);
+}
+
+main {
+  padding: 1rem;
+}
+
+.card-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.card {
+  background-color: var(--white);
+  box-shadow: 0 2px 4px var(--card-shadow);
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.certificates {
+  background-color: var(--primary);
+  color: var(--white);
+  padding: 1rem;
+  margin-top: 2rem;
+  border-radius: 8px;
+}
+
+.filters {
+  margin: 1rem 0;
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.filters button {
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: var(--dark);
+  color: var(--white);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.course-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.course-list div {
+  background-color: #8b4513;
+  color: var(--white);
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+}
+
+footer {
+  background-color: var(--primary);
+  color: var(--white);
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
