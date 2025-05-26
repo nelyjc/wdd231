@@ -74,6 +74,10 @@ nav a.active {
   position: relative;
   width: 100%;
   overflow: hidden;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .hero-image {
