@@ -29,7 +29,7 @@ header {
 }
 
 nav {
-    background-color: #051f57; 
+    background-color: #1757e0; 
     font-family: 'Roboto',sans-serif;
     font-size: larger;
     color: white;
@@ -59,7 +59,7 @@ nav a {
 }
 
 nav a.active {
-    background-color: #09343f; 
+    background-color: #004455; 
 }
 
 .dark-mode-toggle {
