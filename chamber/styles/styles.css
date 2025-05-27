@@ -29,13 +29,13 @@ header {
 }
 
 nav {
-    background-color: #bd515f; 
+    background-color: #051f57; 
     font-family: 'Roboto',sans-serif;
     font-size: larger;
     color: white;
     padding: 10px 0;
     width: 100%;
-    border-radius: 20%;
+    border-radius: 0%;
 
 }
 
@@ -83,13 +83,14 @@ nav a.active {
 .hero-image {
   width: 100%;
   height: auto;
+  max-width:max-content;
   display: block;
   object-fit: cover; 
 }
 
 
 .ticket-button {
-  position: absolute;
+  position:relative, center;
   right: 20px;
   bottom: 20px;
   padding: 10px 20px;
