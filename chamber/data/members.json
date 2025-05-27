@@ -1,0 +1,67 @@
+{
+  "members": [
+    {
+      "name": "Mountain Tech",
+      "address": "123 Innovation Way, Provo, UT",
+      "phone": "801-555-0101",
+      "website": "https://www.mountaintech.com",
+      "image": "mountaintech.jpg",
+      "membershipLevel": 3,
+      "description": "Technology solutions for mountain communities."
+    },
+    {
+      "name": "Beehive Bakery",
+      "address": "456 Sweet St, Provo, UT",
+      "phone": "801-555-0202",
+      "website": "https://www.beehivebakery.com",
+      "image": "beehivebakery.jpg",
+      "membershipLevel": 2,
+      "description": "Artisan baked goods made daily with local ingredients."
+    },
+    {
+      "name": "Wasatch Wellness",
+      "address": "789 Health Ave, Provo, UT",
+      "phone": "801-555-0303",
+      "website": "https://www.wasatchwellness.com",
+      "image": "wasatchwellness.jpg",
+      "membershipLevel": 1,
+      "description": "Your partner in holistic health and wellness."
+    },
+    {
+      "name": "Pioneer Plumbing",
+      "address": "234 Pipe Rd, Provo, UT",
+      "phone": "801-555-0404",
+      "website": "https://www.pioneerplumbing.com",
+      "image": "pioneerplumbing.jpg",
+      "membershipLevel": 2,
+      "description": "Trusted plumbing services since 1970."
+    },
+    {
+      "name": "Canyon Coffee",
+      "address": "321 Java Blvd, Provo, UT",
+      "phone": "801-555-0505",
+      "website": "https://www.canyoncoffee.com",
+      "image": "canyoncoffee.jpg",
+      "membershipLevel": 1,
+      "description": "Coffee roasted locally in the heart of Utah Valley."
+    },
+    {
+      "name": "Utah Outdoor Co.",
+      "address": "654 Trailhead Ln, Provo, UT",
+      "phone": "801-555-0606",
+      "website": "https://www.utahoutdoorco.com",
+      "image": "utahoutdoorco.jpg",
+      "membershipLevel": 3,
+      "description": "Gear and apparel for the adventurous spirit."
+    },
+    {
+      "name": "Valley Vision Care",
+      "address": "987 Focus Dr, Provo, UT",
+      "phone": "801-555-0707",
+      "website": "https://www.valleyvision.com",
+      "image": "valleyvision.jpg",
+      "membershipLevel": 2,
+      "description": "Modern eye care with a hometown feel."
+    }
+  ]
+}
