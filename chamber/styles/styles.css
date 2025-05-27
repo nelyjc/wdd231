@@ -101,7 +101,7 @@ nav a.active {
 }
 
 main {
-  padding: 20px;
+  padding: 10px;
 }
 
 .info-section {
@@ -120,17 +120,10 @@ main {
 
 .business-cards {
   display: flex;
-  justify-content: space-between;
-  gap: 20px;
+  justify-content: gr;
+  gap: 10px;
 }
 
-.business-card {
-  background: #f5f5f5;
-  padding: 10px;
-  border-radius: 10px;
-  flex: 1;
-  text-align: center;
-}
 
 .img-placeholder {
   width: 100%;
