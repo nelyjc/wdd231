@@ -2,9 +2,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const membersContainer = document.querySelector('.business-cards');
     const gridViewBtn = document.getElementById('grid-view-btn');
     const listViewBtn = document.getElementById('list-view-btn');
-    const membersURL = 'data/members.json'; // Path to YOUR JSON file
+    const membersURL = 'data/members.json'; 
 
-    // Function to map membership level numbers to names (remains the same)
     function getMembershipLevelName(level) {
         switch (level) {
             case 1:
@@ -18,7 +17,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    // Async function to fetch member data
     async function getMembersData() {
         try {
             const response = await fetch(membersURL);
@@ -26,7 +24,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 throw new Error(`HTTP error! Status: ${response.status}`);
             }
             const jsonData = await response.json();
-            // MODIFICATION: Access the 'members' array from your JSON structure
             displayMembers(jsonData.members);
         } catch (error) {
             console.error('Could not fetch members data:', error);
@@ -36,8 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    // Function to display members on the page
-    function displayMembers(membersArray) { // Changed parameter name for clarity
+    function displayMembers(membersArray) { 
         if (!membersContainer) {
             console.error('Members container element not found in the DOM!');
             return;
@@ -49,8 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
             card.classList.add('business-card');
 
             const logo = document.createElement('img');
-            // MODIFICATION: Use 'member.image' and ensure path is correct
-            logo.src = `images/${member.image}`; // Assuming 'images' folder
+            logo.src = `images/${member.image}`; 
             logo.alt = `${member.name} Logo`;
             logo.classList.add('business-logo');
             logo.loading = 'lazy';
@@ -67,8 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
             phone.textContent = member.phone;
             phone.classList.add('business-phone');
 
-            const websiteLink = document.createElement('a'); // Renamed for clarity
-            // MODIFICATION: Use 'member.website'
+            const websiteLink = document.createElement('a');
             websiteLink.href = member.website;
             websiteLink.textContent = member.website;
             websiteLink.target = '_blank';
@@ -79,10 +73,9 @@ document.addEventListener('DOMContentLoaded', () => {
             membership.textContent = `Membership: ${getMembershipLevelName(member.membershipLevel)}`;
             membership.classList.add('membership-level');
 
-            // MODIFICATION: Use 'member.description' for what was 'otherInfo'
             const description = document.createElement('p');
             description.textContent = member.description;
-            description.classList.add('other-info'); // You can rename this class if you prefer
+            description.classList.add('other-info');
 
             card.appendChild(logo);
             card.appendChild(name);
@@ -90,13 +83,12 @@ document.addEventListener('DOMContentLoaded', () => {
             card.appendChild(phone);
             card.appendChild(websiteLink);
             card.appendChild(membership);
-            card.appendChild(description); // Add the description
+            card.appendChild(description);
 
             membersContainer.appendChild(card);
         });
     }
 
-    // Event Listeners for view toggle buttons (remains the same)
     if (gridViewBtn && listViewBtn && membersContainer) {
         gridViewBtn.addEventListener('click', () => {
             membersContainer.classList.remove('list-view');
@@ -118,7 +110,6 @@ document.addEventListener('DOMContentLoaded', () => {
         console.warn('View toggle buttons or members container not found.');
     }
 
-    // Footer Updates (remains the same)
     const currentYearSpan = document.getElementById('currentyear');
     if (currentYearSpan) {
         currentYearSpan.textContent = new Date().getFullYear();

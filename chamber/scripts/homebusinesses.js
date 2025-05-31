@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       const jsonData = await response.json();
 
-      // Select 3 featured businesses by name (update as needed)
+      // Select 3 featured businesses 
       const featuredNames = ["Wasatch Wellness", "Mountain Tech", "Provo Cafe"];
       const featuredMembers = jsonData.members.filter(member =>
         featuredNames.includes(member.name)
