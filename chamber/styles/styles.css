@@ -117,6 +117,40 @@ main {
   border-radius: 10px;
   text-align: center;
 }
+.business-card h3 {
+  margin-top: 0.5rem;
+  color: #0B2437;
+}
+
+.business-card p {
+  margin: 0.25rem 0;
+}
+
+.business-card a {
+  color: #004455;
+  text-decoration: underline;
+}
+
+/*toggle */
+.business-cards.grid-view {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.business-cards.grid-view .business-card {
+  flex: 1 1 calc(45% - 1rem); /* 2 cards per row, with spacing */
+  max-width: 100%;
+}
+
+.business-cards.list-view {
+  flex-direction: column;
+}
+
+.business-cards.list-view .business-card {
+  width: 100%;
+}
+
 
 .img-placeholder {
   width: 100%;
