@@ -1,7 +1,53 @@
-@media screen and (min-width: 768px) {
-  .card-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
+@media screen and (min-width: 769px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  nav ul {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  main {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  /* Align the weather and events side by side */
+  .info-section {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  .events, .weather, .forecast {
+    flex: 1;
+    min-width: 250px;
+  }
+
+  /* Display business cards in a grid (3 per row) */
+  .business-cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+  }
+
+  .business-card {
+    flex: 1 1 calc(33.333% - 20px);
+    max-width: calc(33.333% - 20px);
+  }
+
+  footer {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  footer div {
+    flex: 1;
+    min-width: 200px;
   }
 }
