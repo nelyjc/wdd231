@@ -32,7 +32,7 @@
       "address": "234 Pipe Rd, Provo, UT",
       "phone": "801-555-0404",
       "website": "https://www.pioneerplumbing.com",
-      "image": "pioneerplumbing.jpg",
+      "image": "pioneerplumbing.png",
       "membershipLevel": 2,
       "description": "Trusted plumbing services since 1970."
     },
@@ -41,7 +41,7 @@
       "address": "321 Java Blvd, Provo, UT",
       "phone": "801-555-0505",
       "website": "https://www.canyoncoffee.com",
-      "image": "canyoncoffee.jpg",
+      "image": "canyoncoffee.png",
       "membershipLevel": 1,
       "description": "Coffee roasted locally in the heart of Utah Valley."
     },
@@ -50,7 +50,7 @@
       "address": "654 Trailhead Ln, Provo, UT",
       "phone": "801-555-0606",
       "website": "https://www.utahoutdoorco.com",
-      "image": "utahoutdoorco.jpg",
+      "image": "utahoutdoorco.png",
       "membershipLevel": 3,
       "description": "Gear and apparel for the adventurous spirit."
     },
@@ -59,7 +59,7 @@
       "address": "987 Focus Dr, Provo, UT",
       "phone": "801-555-0707",
       "website": "https://www.valleyvision.com",
-      "image": "valleyvision.jpg",
+      "image": "valleyvision.png",
       "membershipLevel": 2,
       "description": "Modern eye care with a hometown feel."
     }
