@@ -1,27 +1,26 @@
-@media screen and (min-width: 768px) {
-  .card-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-  }
-}
-  .card {
-    flex: 1;
-    margin: 0 0.5rem;
-  }
+/* larger.css */
 
-  .course-list {
-    justify-content: space-evenly;
+@media screen and (min-width: 600px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
   }
 
   nav ul {
-    justify-content: center;
+    display: flex !important;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: flex-end;
   }
 
-  header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+  #hamburger {
+    display: none;
   }
-  
+
+  .business-cards, .info-section {
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+}
