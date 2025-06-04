@@ -29,15 +29,15 @@
 
   /* Display business cards in a grid (3 per row) */
   .business-cards {
-    flex-direction: row;
+    display: flex;
     flex-wrap: wrap;
-    gap: 20px;
-    justify-content: space-between;
+    gap: 1rem;
+    justify-content: center;
   }
 
-  .business-card {
-    flex: 1 1 calc(33.333% - 20px);
-    max-width: calc(33.333% - 20px);
+  .business-cards > div {
+    flex: 1 1 250px;
+    max-width: 300px;
   }
 
   footer {

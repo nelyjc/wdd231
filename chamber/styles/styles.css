@@ -168,20 +168,27 @@ main {
 
 .business-cards.list-view .business-card {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 1rem;
-  padding: 1rem;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  background: #fff;
+  flex-wrap: wrap;
+  text-align: left;
 }
-
+.business-cards.list-view .business-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
 .business-logo {
   width: 150px;
   height: 150px;
   object-fit: cover; /* OR 'contain' if you prefer full image */
   border-radius: 8px;
   flex-shrink: 0;
+}
+  .view-toggle-buttons button.active {
+  background-color: #004455;
+  color: white;
 }
 
 footer {

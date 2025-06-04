@@ -13,3 +13,5 @@ document.addEventListener("DOMContentLoaded", () => {
     container.classList.remove("grid-view");
   });
 });
+gridBtn.classList.add("active");
+listBtn.classList.remove("active");
