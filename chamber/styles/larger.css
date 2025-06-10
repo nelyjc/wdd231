@@ -51,3 +51,18 @@
     min-width: 200px;
   }
 }
+@media (min-width: 800px) {
+  .membership-cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 768px) {
+  nav ul {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  nav li {
+    margin: 0 10px;
+  }
+}
