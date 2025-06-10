@@ -76,7 +76,6 @@ nav a.active {
 }
 
 .hero-image {
-  width: 100%;
   object-fit: cover;
 }
 
