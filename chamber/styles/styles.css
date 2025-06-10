@@ -38,11 +38,16 @@ nav {
 }
 
 nav ul {
+  display: none;
   list-style: none;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10px;
+  gap: 1rem;
+}
+
+nav ul.open {
+  display: flex; /* Show nav menu when hamburger toggled */
 }
 
 nav li {
@@ -58,6 +63,9 @@ nav a {
 
 nav a.active {
   background-color: #004455;
+  font-weight: bold;
+  color: #ffb758; 
+  text-decoration: solid;
 }
 
 .dark-mode-toggle {
@@ -224,6 +232,8 @@ footer div {
   max-width: 1100px;
   padding: 0 1rem;
 }
+
+
 
 /* Form styling */
 form {

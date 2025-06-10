@@ -1,6 +1,4 @@
-/* larger.css */
-
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 768px) {
   header {
     flex-direction: row;
     justify-content: space-between;
@@ -15,10 +13,11 @@
   }
 
   #hamburger {
-    display: none;
+    display: none !important;
   }
 
-  .business-cards, .info-section {
+  .business-cards,
+  .info-section {
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;

@@ -66,3 +66,12 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 150 * index);
   });
 });
+document.addEventListener('DOMContentLoaded', () => {
+  const hamburger = document.getElementById('hamburger');
+  const nav = document.querySelector('nav ul');
+
+  hamburger.addEventListener('click', () => {
+    const isOpen = nav.classList.toggle('open');
+    hamburger.setAttribute('aria-expanded', isOpen);
+  });
+});
