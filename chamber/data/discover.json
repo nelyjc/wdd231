@@ -1,0 +1,58 @@
+[
+  {
+    "title": "Provo City Center Temple",
+    "image": "images/provocitytemple.webp",
+    "address": "50 S University Ave, Provo, UT 84601",
+    "description": "A beautifully restored temple in the heart of downtown Provo.",
+    "website": "https://maps.app.goo.gl/jztt7111LeuDmf2RA"
+  },
+  {
+    "title": "Bridal Veil Falls",
+    "image": "images/bridalveil.webp",
+    "address": "Provo Canyon Rd, Provo, UT 84604",
+    "description": "A scenic waterfall accessible via a short walk in Provo Canyon.",
+    "website": "https://maps.app.goo.gl/Di53uYuDbvydz9ju9"
+  },
+  {
+    "title": "Provo River Parkway",
+    "image": "images/provoriver.webp",
+    "address": "2230 N Canyon Rd, Provo, UT 84604",
+    "description": "A popular trail for walking, running, and biking along the scenic Provo River.",
+    "website": "https://maps.app.goo.gl/6zAfX3xNnT6jo2vu7"
+  },
+  {
+    "title": "Bean Life Science Museum",
+    "image": "images/beanlife.webp",
+    "address": "645 E 1430 N, Provo, UT 84602",
+    "description": "A free museum with wildlife exhibits and educational programs located on BYU campus.",
+    "website": "https://maps.app.goo.gl/L7n1AmEkcsqd1mRo7"
+  },
+  {
+    "title": "Rock Canyon",
+    "image": "images/rockcanyon.webp",
+    "address": "Rock Canyon Trailhead, Provo, UT 84604",
+    "description": "A favorite for rock climbing, hiking, and exploring nature close to the city.",
+    "website": "https://maps.app.goo.gl/uSsLQ25JnrEMLyc5A"
+  },
+  {
+    "title": "Downtown Provo",
+    "image": "images/provocity.webp",
+    "address": "Center St, Provo, UT 84601",
+    "description": "A vibrant area filled with shops, restaurants, and live music venues.",
+    "website": "https://maps.app.goo.gl/DnnCUG5WMGmsqhKC9"
+  },
+  {
+    "title": "Provo Recreation Center",
+    "image": "images/provorec.webp",
+    "address": "320 W 500 N, Provo, UT 84601",
+    "description": "A modern facility with pools, gym, fitness classes, and family activities.",
+    "website": "https://maps.app.goo.gl/KSnpFN21BPm8xVwW8"
+  },
+  {
+    "title": "Peaks Ice Arena",
+    "image": "images/peaksice.webp",
+    "address": "100 N Seven Peaks Blvd, Provo, UT 84606",
+    "description": "An Olympic venue turned community rink offering public skating and hockey events.",
+    "website": "https://maps.app.goo.gl/eqHzkh5kZmGxk1Qk6"
+  }
+]
