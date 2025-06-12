@@ -4,7 +4,7 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     background-color: #f4f4f4; 
-    color: #333;
+    color: #000000;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -75,7 +75,7 @@ main {
     padding: 20px;
     max-width: 960px;
     margin: 20px auto;
-    background-color: white;
+    background-color: rgb(255, 240, 255);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     flex-grow: 1;
 }
@@ -95,7 +95,7 @@ main h1 {
 }
 
 .card {
-    background-color: #ecf0f1; 
+    background-color: #ffffff; 
     border-radius: 5px;
     padding: 15px;
     flex: 1 1 300px; 
@@ -121,7 +121,7 @@ main h1 {
 }
 
 .certificates {
-    background-color: #d3d3d3; 
+    background-color: #ffffff; 
     padding: 20px;
     border-radius: 5px;
     margin-bottom: 20px;
@@ -142,7 +142,7 @@ main h1 {
 }
 
 .filters button {
-    background-color: #fcfcfc; 
+    background-color: #02686b; 
     color: white;
     border: none;
     padding: 8px 15px;
