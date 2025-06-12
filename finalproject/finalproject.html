@@ -17,11 +17,13 @@
   <link rel="icon" href="logoplayground.ico">
 
   <script src="scripts/playgrounds.js" defer></script>
+  <script src="scripts/weather.js" defer></script>
   <script src="scripts/getdates.js" defer></script>
   <script src="scripts/darkmode.js" defer></script>
   <script src="scripts/formsubmit.js"defer></script>
   <script src="scripts/questionform.js"defer></script>
   <script src="scripts/displayinfo.js" defer></script>
+  
 </head>
 
 <body>
@@ -44,6 +46,13 @@
     <div class="hero">
       <img src="images/patriot-park.jpg" width="600" height="400" alt="Hero">
     </div>
+    <section class="weather-box">
+  <h2>Current Weather in Utah County</h2>
+  <div class="weather-info">
+    <img id="weather-icon" src="images/weather-icon.png" alt="Weather icon">
+    <p><span id="temp"></span> | <span id="description"></span></p>
+  </div>
+</section>
 
     <section class="featured-playground">
       <h1>Featured Playgrounds</h1>
