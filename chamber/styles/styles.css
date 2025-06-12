@@ -151,7 +151,7 @@ main {
 }
 
 
-/*toggle */
+/*directory toggle */
 
 .business-cards.grid-view {
   display: grid;
@@ -198,6 +198,15 @@ main {
   color: white;
 }
 /* discovery page */
+
+.sidebar-message {
+  background-color: #e0f7fa;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-left: 5px solid #00796b;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+}
 
 .cards-grid {
   display: grid;
@@ -262,9 +271,38 @@ main {
 .card button:hover {
   background-color: #004d40;
 }
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.cards-list {
+  display: block;
+}
+
+.cards-list .card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  border-bottom: 1px solid #ccc;
+}
+
+.cards-list .card img {
+  width: 100px;  
+  height: auto;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.cards-list .card-content {
+  flex-grow: 1;
+}
 
 
 /* join website */
+
 
 /* Container for form and cards */
 .join-container {

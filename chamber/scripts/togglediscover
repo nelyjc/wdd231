@@ -1,0 +1,17 @@
+// togglediscover.js
+
+document.addEventListener("DOMContentLoaded", () => {
+  const gridBtn = document.getElementById("grid-view-btn");
+  const listBtn = document.getElementById("list-view-btn");
+  const container = document.getElementById("cards-container");
+
+  gridBtn.addEventListener("click", () => {
+    container.classList.add("cards-grid");
+    container.classList.remove("cards-list");
+  });
+
+  listBtn.addEventListener("click", () => {
+    container.classList.add("cards-list");
+    container.classList.remove("cards-grid");
+  });
+});

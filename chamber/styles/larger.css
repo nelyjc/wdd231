@@ -10,24 +10,28 @@
     justify-content: center;
   }
 
+  nav li {
+    margin: 0 10px;
+  }
+
   main {
     max-width: 1200px;
     margin: 0 auto;
   }
 
-  /* Align the weather and events side by side */
   .info-section {
     flex-direction: row;
     justify-content: space-between;
     gap: 20px;
   }
 
-  .events, .weather, .forecast {
+  .events,
+  .weather,
+  .forecast {
     flex: 1;
     min-width: 250px;
   }
 
-  /* Display business cards in a grid (3 per row) */
   .business-cards {
     display: flex;
     flex-wrap: wrap;
@@ -41,6 +45,7 @@
   }
 
   footer {
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -50,23 +55,47 @@
     flex: 1;
     min-width: 200px;
   }
+}
 
-  nav ul {
-    flex-direction: row;
-    justify-content: center;
-  }
-
-  nav li {
-    margin: 0 10px;
-  }
-@media (min-width: 800px) {
+/* Membership Cards Grid for Join Page */
+@media screen and (min-width: 800px) {
   .membership-cards {
+    display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 1rem;
   }
 }
 
-/* discovery page */
+/* Discovery Page (Mid-size) Grid Layout */
+@media screen and (min-width: 641px) {
+  .cards-grid {
+    display: grid;
+    grid-template-areas:
+      "card1 card2"
+      "card3 card4"
+      "card5 card6"
+      "card7 card8";
+    gap: 1rem;
+  }
 
+  #cards-container figure img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+
+  #cards-container figure img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    filter: brightness(0.9);
+  }
+
+  .card img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+  }
+}
+
+/* Discovery Page (Large) Grid Layout */
 @media screen and (min-width: 1025px) {
   .cards-grid {
     grid-template-areas:
@@ -82,41 +111,4 @@
   .card:nth-child(6) { grid-area: card6; }
   .card:nth-child(7) { grid-area: card7; }
   .card:nth-child(8) { grid-area: card8; }
-}
-.sidebar-message {
-  background-color: #e0f7fa;
-  padding: 1rem;
-  margin: 1rem 0;
-  border-left: 5px solid #00796b;
-  font-family: 'Roboto', sans-serif;
-  font-size: 1rem;
-  width: 300px;
-  height: 200px;
-  }
-
-
-
-@media (min-width: 641px) {
-  #cards-container figure img {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    cursor: pointer;
-  }
-  #cards-container figure img:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
-    filter: brightness(0.9);
-  }
-
-  .cards-grid {
-    grid-template-areas:
-      "card1 card2"
-      "card3 card4"
-      "card5 card6"
-      "card7 card8";
-  }
-
-  .card img:hover {
-  transform: scale(1.05);
-  transition: transform 0.3s ease-in-out;
-  }
 }

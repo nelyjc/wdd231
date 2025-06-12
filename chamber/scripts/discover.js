@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
           </figure>
           <address>${item.address}</address>
           <p>${item.description}</p>
-          <button>Directions</button>
+          <button>Learn More</button>
         `;
 
         // Add event listener to open Google Maps website in new tab
