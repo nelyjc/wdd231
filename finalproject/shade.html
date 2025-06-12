@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shaded Playgrounds</title>
+  <meta name="author" content="Nely Crespin">
+  <meta name="description" content="Shaded Playgrounds Home Page">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/project.css">
+  <link rel="stylesheet" href="styles/project-larger.css">
+
+  <link rel="icon" href="logoplayground.ico">
+
+  <script src="scripts/playgrounds.js" defer></script>
+  <script src="scripts/getdates.js" defer></script>
+  <script src="scripts/darkmode.js" defer></script>
+  <script src="scripts/formsubmit.js"defer></script>
+  <script src="scripts/questionform.js"defer></script>
+  <script src="scripts/displayinfo.js" defer></script>
+  
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <img src="images/utahlogo.jpg" alt="Utah County Logo">
+      <p>Utah County<br><span>Shaded Playgrounds</span></p>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="project.html">Home</a></li>
+        <li><a href="shade.html" class="active">Shade</a></li>
+        <li><a href="water.html">Water</a></li>
+      </ul>
+      <button class="dark-mode-toggle" aria-label="Toggle Dark Mode">🌙</button>
+    </nav>
+  </header>
+
+  <main>
+    <div class="hero">
+      <img src="images/patriot-park.jpg" width="600" height="400" alt="Hero">
+    </div>
+
+    <section class="featured-playground">
+      <h1>Featured Shaded Playgrounds</h1>
+      <p>These are the most popular shaded playgrounds.</p>
+    </section>
+
+    <section class="playground-cards" id="playground-container"></section>
+
+    </div>
+
+    <!-- <! -- Footer --> 
+    
+    <form id="contactForm" action="questionform.html" method="get">
+      <h1>Join our Mailing List</h1>
+      <p>We send out weekly emails with the best playgrounds to visit!</p>
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <button type="submit">Submit</button>
+    </form>
+
+  </main>
+
+  <footer>
+    <div class="contact-info">
+      <p><strong>Shaded Playgrounds</strong><br>
+        10 Center St<br>
+        info@provo.org<br>
+        (223) 555-2300
+      </p>
+    </div>
+    <div class="social-media">
+      <a href="#"><img src="images/youtube.webp" alt="YouTube" width="300" height="200"></a>
+      <a href="#"><img src="images/x.png" alt="Twitter" width="300" height="200"></a>
+      <a href="#"><img src="images/linkedin.jpg" alt="LinkedIn" width="300" height="200"></a>
+    </div>
+    <p>&copy; <span id="year"></span> Nely, USA.</p>
+    <p>WDD 131 Class Project</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>
