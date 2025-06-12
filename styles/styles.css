@@ -60,10 +60,11 @@ nav li {
 }
 
 nav a {
-    color: white;
+    color: rgb(8, 1, 12);
     text-decoration: none;
     padding: 8px 15px;
     border-radius: 5px;
+    background-color: #ebe7ec;
 }
 
 nav a.active {
