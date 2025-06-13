@@ -228,48 +228,6 @@ p {
   color: #004455;
 }
 
-
-/* ===  Cards (Grid & List) ===
-.business-cards {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-.business-card {
-  background: #fff;
-  padding: 1rem;
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  text-align: center;
-  max-width: 400px;
-  margin: 0 auto;
-}
-
-.business-card h3 {
-  color: #0B2437;
-  margin-top: 0.5rem;
-}
-
-.business-card p {
-  margin: 0.25rem 0;
-}
-
-.business-card a {
-  color: #004455;
-  text-decoration: underline;
-}
-
-.business-logo {
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  display: block;
-  margin: 0 auto;
-} */
-
 /* === View Toggle Buttons === */
 .view-toggle-buttons button.active {
   background-color: #004455;
@@ -295,16 +253,6 @@ footer div {
   height: auto;
 }
 
-/* === Join Page === */
-.join-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  justify-content: center;
-  margin: 2rem auto;
-  max-width: 1100px;
-  padding: 0 1rem;
-}
 
 /* === Form === */
 form {
