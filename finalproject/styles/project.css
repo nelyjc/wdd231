@@ -44,7 +44,7 @@ ul {
 
 /* === Strong text === */
 strong {
-  color: #f4a261; /* Golden Yellow */
+  color: #ff7300; /* Golden Yellow */
 }
 
 /* === Images === */
@@ -217,7 +217,7 @@ main {
 .playground-card a {
   display: inline-block;
   margin-top: 0.5rem;
-  color: #0077cc;
+  color: #00191d;
   text-decoration: none;
   font-weight: bold;
 }
