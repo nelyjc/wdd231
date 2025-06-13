@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
       localStorage.setItem("visitorName", name);
       localStorage.setItem("visitorEmail", email);
 
-      alert("Form submitted! Redirecting...");
+      alert("Form submitted!");
       window.location.href = "questionform.html";
     });
   }
