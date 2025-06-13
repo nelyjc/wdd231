@@ -12,25 +12,46 @@
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="styles/project.css">
-  <link rel="stylesheet" href="siteplan-larger.css">
+  <link rel="stylesheet" href="styles/project-larger.css">
+
+  <link rel="icon" href="logoplayground.ico">
+
+  <script src="scripts/formsubmit.js" defer></script>
+  <script src="scripts/displayinfo.js" defer></script>
 
   <script src="scripts/playgrounds.js" defer></script>
   <script src="scripts/getdates.js" defer></script>
   <script src="scripts/darkmode.js" defer></script>
-  <script src="scripts/questionform.js" defer></script>
-  <script src="scripts/formsubmit.js" defer></script>
-  <script src="scripts/displayinfo.js" defer></script>
+  
+ 
 </head>
 <body>
-
+<header>
+    <div class="logo">
+      <img src="images/utahlogo.jpg" alt="Utah Logo" class="logo">
+      <p>Utah County<br><span>Shaded Playgrounds</span></p>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="project.html" class="active">Home</a></li>
+        <li><a href="shade.html">Shade</a></li>
+        <li><a href="water.html">Water</a></li>
+      </ul>
+      <button id="darkModeToggle" aria-label="Toggle Dark Mode">🌙</button>
+    </nav>
+  </header>
   <main class="form-section">
-  <h1>Thank you for contacting us!</h1>
-  <p>Your submitted info:</p>
-  <p>Name: <span id="displayName"></span></p>
-  <p>Email: <span id="displayEmail"></span></p>
+  <h2>Thank you for joining!</h2>
+  
+  <p><strong>Name:</strong> <span id="displayName"></span></p>
+  <p><strong>Email:</strong> <span id="displayEmail"></span></p>
+  
   <h2> You will start receiving emails in about 5-7 business days. <span>Thank you.</span></h2>
 </body>
 
+
+
+<!-- ___________FOOTER____________ -->
   <footer>
     <div class="contact-info">
       <p><strong>Shaded Playgrounds</strong><br>
@@ -40,11 +61,11 @@
       </p>
     </div>
     <div class="social-media">
-      <a href="#"><img src="images/youtube.png" alt="YouTube"></a>
-      <a href="#"><img src="images/x.png" alt="Twitter"></a>
-      <a href="#"><img src="images/linkedin.jpg" alt="LinkedIn"></a>
+      <a href="#"><img src="images/youtube.webp" alt="YouTube" width="300" height="200"></a>
+      <a href="#"><img src="images/x.png" alt="Twitter" width="300" height="200"></a>
+      <a href="#"><img src="images/linkedin.jpg" alt="LinkedIn" width="300" height="200"></a>
     </div>
-    <p>&copy; <span id="currentyear"></span> Nely, USA.</p>
+    <p>&copy; <span id="year"></span> Nely, USA.</p>
     <p>WDD 231 Class Project</p>
     <p id="lastModified"></p>
   </footer>

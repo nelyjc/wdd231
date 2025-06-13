@@ -1,14 +1,23 @@
 document.addEventListener("DOMContentLoaded", () => {
   const form = document.getElementById("contactForm");
-  form.addEventListener("submit", (e) => {
-    e.preventDefault();
 
-    const name = document.getElementById("name").value.trim();
-    const email = document.getElementById("email").value.trim();
+  if (form) {
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
 
-    localStorage.setItem("visitorName", name);
-    localStorage.setItem("visitorEmail", email);
+      const name = document.getElementById("displayName").value.trim();
+      const email = document.getElementById("displayEmail").value.trim();
 
-    window.location.href = "questionform.html";
-  });
+      if (!name || !email) {
+        alert("Both fields are required.");
+        return;
+      }
+
+      localStorage.setItem("visitorName", name);
+      localStorage.setItem("visitorEmail", email);
+
+      alert("Form submitted! Redirecting...");
+      window.location.href = "questionform.html";
+    });
+  }
 });
